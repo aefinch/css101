@@ -1,0 +1,88 @@
+
+p {
+	border-bottom: 3px solid red;
+
+}
+.kermit {
+	border: 3px solid green;
+}
+#main-div-1 {
+	padding: 100px;
+}
+#main-div-2 .kermit {
+	border: 3px dotted purple;
+}
+#main-div-2 > * {
+	border: 4px solid black;
+}
+h2 ~ p {
+	border: 3px solid blue;
+}
+#li-1 {
+	font-size: 30px;
+}
+#li-2 {
+	font-weight: bold;
+}
+#li-3 {
+	text-transform: uppercase;
+}
+#mystery-ul {
+	font-family: 'Mystery Quest', cursive;
+}
+#flex-kermit {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#flex-kermit img {
+	max-width: 30%;
+}
+/*DOING SOME STUFF*/
+
+/*Hover on anchor tags*/
+a:hover {
+	font-size: 50px;
+}
+
+/*active*/
+a:active {
+	background-color: green;
+}
+
+/* Focus */
+input:focus {
+	background-color: yellow;
+}
+
+/* Nth-Child */
+.sub-div li:nth-child(2n) {
+	border: pink 5px solid;
+}
+.sub-div li:nth-child(2n+1) {
+	border: blue 5px solid;
+}
+
+/* nth-of-type */
+.sub-div li:nth-of-type(2n) {
+	color: blue;
+}
+
+section p:nth-child(2) {
+	color: red;
+}
+section p:nth-of-type(2) {
+	color: orange;
+}
+/* before */
+#main-div-1::before {
+	content: "\201C";
+	font-size: 60px;
+	font-weight: bold;
+	color: purple;
+}
+#main-div-1::after {
+	content: "$$$$$";
+}
+
+
